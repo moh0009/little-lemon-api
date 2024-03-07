@@ -9,6 +9,8 @@ from rest_framework.permissions import IsAuthenticated
 class MenuAll(generics.ListCreateAPIView):
     queryset = models.Menu.objects.all()
     serializer_class = serializers.MenuSerializer
+    permission_classes = [IsAuthenticated]
+
 
 class MenuSingle(generics.RetrieveUpdateDestroyAPIView):
     queryset = models.Menu.objects.all()
