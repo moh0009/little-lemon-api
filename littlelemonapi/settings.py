@@ -80,9 +80,9 @@ WSGI_APPLICATION = 'littlelemonapi.wsgi.application'
 DATABASES = {   
     'default': {   
         'ENGINE': 'django.db.backends.mysql',   
-        'NAME': 'little_lemon',   
-        'USER': 'phpmyadmin',   
-        'PASSWORD': 'mnmn',   
+        'NAME': '',   
+        'USER': '',   
+        'PASSWORD': '',   
         'HOST': '127.0.0.1',   
         'PORT': '3306',   
         'OPTIONS': {   
