@@ -18,3 +18,6 @@ class BookingApi(ModelViewSet):
     queryset = models.Booking.objects.all()
     serializer_class = serializers.BookingSerializer
     permission_classes = [IsAuthenticated]
+
+def index(re):
+    return render(re,"index.html",{})
